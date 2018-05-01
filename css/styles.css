@@ -27,3 +27,27 @@
     margin: 0;
     color: #0f0f0f;
 }
+
+body {
+    /* padding: 50px 0 0; */
+    z-index: 0;
+}
+
+.navbar-dark {
+    background-color: #512da8;
+}
+
+.radio-inline {
+    margin-right: 10px
+}
+
+.radio-inline input {
+    margin-right: 5px;
+}
+
+.tab-content {
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    padding: 10px;
+}
