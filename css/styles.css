@@ -45,9 +45,114 @@ body {
     margin-right: 5px;
 }
 
+/* Style radio input buttons */
+.radio-btn-group input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.container input:checked ~ .radio-btn {
+    border: #2196F3;
+}
+
+.radio-btn-group .radio-inline {
+    margin-right: 0;
+}
+
+
+/* Customize the label (the container) */
+.radio-btn-group .radio-btn {
+    display: block;
+    position: relative;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    width: 130px;
+    height: 40px;
+}
+
+/* Hide the browser's default radio button */
+.radio-btn-group .radio-btn input {
+    position: absolute;
+    opacity: 0;
+}
+
+/* Create a custom radio button */
+.radio-btn-group .radio-btn span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 130px;
+}
+  
+  /* On mouse-over, add a grey background color */
+.radio-btn-group .radio-btn:hover input ~ span {
+    opacity: .8;  
+}
+  
+/* When the radio button is checked, add a blue background */
+.radio-btn-group .radio-btn input:checked ~ span {
+    background-color: rgba(0,0,0, 0.2);
+    color: black;
+}
+
+/* Style default button */
+.btn-default {
+    color: #fff;
+    background-color: #666;
+    border-color: #666;
+}
+.btn-default:hover {
+    background-color: #555;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.btn:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.radio-btn-group label input:checked ~ span:after {
+    display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.radio-btn-group label span:after {
+    /* top: 9px;
+    left: 9px; */
+    /* width: 8px;
+    height: 8px; */
+}
+
+
+
+
+
+
+
 .tab-content {
     border-left: 1px solid #ddd;
     border-right: 1px solid #ddd;
     border-bottom: 1px solid #ddd;
     padding: 10px;
+}
+
+.carousel {
+    background:#512DA8;
+}
+
+.carousel-item {
+  height: 300px;
+}
+
+.carousel-item img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-height: 300px;
 }
