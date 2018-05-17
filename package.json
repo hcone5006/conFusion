@@ -16,11 +16,13 @@
     "usemin": "usemin contactus.html -d dist --htmlmin -o dist/contactus.html && usemin aboutus.html -d dist --htmlmin -o dist/aboutus.html && usemin index.html -d dist --htmlmin -o dist/index.html",
     "build": "npm run clean && npm run imagemin && npm run copyfonts && npm run usemin",
     "grunt-css": "grunt-css",
-    "grunt": "grunt"
+    "grunt": "grunt",
+    "gulp": "gulp"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "browser-sync": "^2.23.6",
     "copyfiles": "2.0.0",
     "cssmin": "^0.4.3",
     "grunt": "1.0.2",
@@ -35,6 +37,8 @@
     "grunt-contrib-uglify": "^3.3.0",
     "grunt-filerev": "^2.3.1",
     "grunt-sass": "^2.1.0",
+    "gulp": "^3.9.1",
+    "gulp-sass": "^3.1.0",
     "htmlmin": "0.0.7",
     "imagemin": "^3.0.0",
     "imagemin-cli": "^3.0.0",

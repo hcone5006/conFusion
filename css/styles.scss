@@ -61,7 +61,7 @@ body{
 // Style carousel
 .carousel {
     background: $background-dark;
-
+    border: 1px solid red;
     .carousel-item {
         height: $carousel-item-height;
         img {
